@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="study.advanced.trace.strategy.TemplateCallbackTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-12-27T15:29:38" hostname="DESKTOP-3SNDVLJ" time="0.028">
+  <properties/>
+  <testcase name="callbackV1()" classname="study.advanced.trace.strategy.TemplateCallbackTest" time="0.026"/>
+  <testcase name="callbackV2()" classname="study.advanced.trace.strategy.TemplateCallbackTest" time="0.001"/>
+  <system-out><![CDATA[00:29:38.266 [Test worker] INFO study.advanced.trace.strategy.TemplateCallbackTest - 비즈니스 로직1 실행
+00:29:38.268 [Test worker] INFO study.advanced.trace.strategy.code.template.TimeLogTemplate - resultTime=3
+00:29:38.269 [Test worker] INFO study.advanced.trace.strategy.TemplateCallbackTest - 비즈니스 로직2 실행
+00:29:38.270 [Test worker] INFO study.advanced.trace.strategy.code.template.TimeLogTemplate - resultTime=1
+00:29:38.286 [Test worker] INFO study.advanced.trace.strategy.TemplateCallbackTest - 비즈니스 로직1 실행
+00:29:38.286 [Test worker] INFO study.advanced.trace.strategy.code.template.TimeLogTemplate - resultTime=0
+00:29:38.286 [Test worker] INFO study.advanced.trace.strategy.TemplateCallbackTest - 비즈니스 로직2 실행
+00:29:38.286 [Test worker] INFO study.advanced.trace.strategy.code.template.TimeLogTemplate - resultTime=0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,8 @@
+r00:29:38.266 [Test worker] INFO study.advanced.trace.strategy.TemplateCallbackTest - 비즈니스 로직1 실행
+l00:29:38.268 [Test worker] INFO study.advanced.trace.strategy.code.template.TimeLogTemplate - resultTime=3
+r00:29:38.269 [Test worker] INFO study.advanced.trace.strategy.TemplateCallbackTest - 비즈니스 로직2 실행
+l00:29:38.270 [Test worker] INFO study.advanced.trace.strategy.code.template.TimeLogTemplate - resultTime=1
+r00:29:38.286 [Test worker] INFO study.advanced.trace.strategy.TemplateCallbackTest - 비즈니스 로직1 실행
+l00:29:38.286 [Test worker] INFO study.advanced.trace.strategy.code.template.TimeLogTemplate - resultTime=0
+r00:29:38.286 [Test worker] INFO study.advanced.trace.strategy.TemplateCallbackTest - 비즈니스 로직2 실행
+l00:29:38.286 [Test worker] INFO study.advanced.trace.strategy.code.template.TimeLogTemplate - resultTime=0
