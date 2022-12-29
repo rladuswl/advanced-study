@@ -1,5 +1,6 @@
 package hello.proxy.app.v1;
 
+// 구현체
 public class OrderControllerV1Impl implements OrderControllerV1 {
 
     private final OrderServiceV1 orderService;

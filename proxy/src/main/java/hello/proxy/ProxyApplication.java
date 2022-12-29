@@ -29,7 +29,7 @@ import org.springframework.context.annotation.Import;
 //@Import(BeanPostProcessorConfig.class)
 //@Import(AutoProxyConfig.class)
 @Import(AopConfig.class)
-@SpringBootApplication(scanBasePackages = "hello.proxy.app") //주의
+@SpringBootApplication(scanBasePackages = "hello.proxy.app") // 주의 : app 하위만 컴포넌트 스캔의 대상
 public class ProxyApplication {
 
 	public static void main(String[] args) {
