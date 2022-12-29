@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Slf4j
-@RequestMapping
+@RequestMapping // @Controller 안에 @Component 가 있어서 컴포넌트 스캔의 대상이 되기 때문에 사용x -> 수동등록 할 것임.
 @ResponseBody
 public class OrderControllerV2 {
 
