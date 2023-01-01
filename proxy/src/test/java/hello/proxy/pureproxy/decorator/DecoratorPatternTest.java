@@ -16,8 +16,8 @@ public class DecoratorPatternTest {
 
     @Test
     void decorator1() {
-        Component realComponent = new RealComponent();
-        Component messageDecorator = new MessageDecorator(realComponent);
+        Component realComponent = new RealComponent(); // 실제 객체
+        Component messageDecorator = new MessageDecorator(realComponent); // 프록시 객체
         DecoratorPatternClient client = new DecoratorPatternClient(messageDecorator);
         client.execute();
     }

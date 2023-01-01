@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class MessageDecorator implements Component {
 
-    private Component component;
+    private Component component; // 실제 객체
 
     public MessageDecorator(Component component) {
         this.component = component;
