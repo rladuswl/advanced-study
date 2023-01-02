@@ -8,7 +8,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class OrderRepositoryInterfaceProxy implements OrderRepositoryV1 {
 
-    private final OrderRepositoryV1 target;
+    private final OrderRepositoryV1 target; // 실제 객체 참조
     private final LogTrace logTrace;
 
     @Override
@@ -17,7 +17,7 @@ public class OrderRepositoryInterfaceProxy implements OrderRepositoryV1 {
         TraceStatus status = null;
         try {
             status = logTrace.begin("OrderRepository.request()");
-            //target 호출
+            // target 호출
             target.save(itemId);
             logTrace.end(status);
         } catch (Exception e) {

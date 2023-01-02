@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class TimeDecorator implements Component {
 
-    private Component component;
+    private Component component; // 프록시가 프록시를 DI
 
     public TimeDecorator(Component component) {
         this.component = component;

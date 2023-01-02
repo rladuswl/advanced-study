@@ -24,6 +24,7 @@ public class DecoratorPatternTest {
 
     @Test
     void decorator2() {
+        // client -> timeDecorator -> messageDecorator -> realComponent
         Component realComponent = new RealComponent();
         Component messageDecorator = new MessageDecorator(realComponent);
         Component timeDecorator = new TimeDecorator(messageDecorator);

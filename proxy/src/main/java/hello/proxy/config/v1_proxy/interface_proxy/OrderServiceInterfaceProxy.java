@@ -9,7 +9,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class OrderServiceInterfaceProxy implements OrderServiceV1 {
 
-    private final OrderServiceV1 target;
+    private final OrderServiceV1 target; // 실제 객체
     private final LogTrace logTrace;
 
     @Override
@@ -18,7 +18,7 @@ public class OrderServiceInterfaceProxy implements OrderServiceV1 {
         TraceStatus status = null;
         try {
             status = logTrace.begin("OrderService.orderItem()");
-            //target 호출
+            // target 호출
             target.orderItem(itemId);
             logTrace.end(status);
         } catch (Exception e) {
