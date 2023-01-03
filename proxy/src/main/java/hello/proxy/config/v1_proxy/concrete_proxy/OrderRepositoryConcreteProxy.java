@@ -6,7 +6,7 @@ import hello.proxy.trace.logtrace.LogTrace;
 
 public class OrderRepositoryConcreteProxy extends OrderRepositoryV2 {
 
-    private final OrderRepositoryV2 target;
+    private final OrderRepositoryV2 target; // 실제 구체 클래스
     private final LogTrace logTrace;
 
     public OrderRepositoryConcreteProxy(OrderRepositoryV2 target, LogTrace logTrace) {

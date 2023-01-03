@@ -10,7 +10,7 @@ public class OrderServiceConcreteProxy extends OrderServiceV2 {
     private final LogTrace logTrace;
 
     public OrderServiceConcreteProxy(OrderServiceV2 target, LogTrace logTrace) {
-        super(null);
+        super(null); // 클래스 기반 프록시의 단점
         this.target = target;
         this.logTrace = logTrace;
     }
