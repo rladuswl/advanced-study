@@ -27,6 +27,7 @@ public class ProxyFactoryTest {
 
         proxy.save();
 
+        // ProxyFactory를 통해 만들어진 proxy에만 가능
         assertThat(AopUtils.isAopProxy(proxy)).isTrue();
         assertThat(AopUtils.isJdkDynamicProxy(proxy)).isTrue();
         assertThat(AopUtils.isCglibProxy(proxy)).isFalse();
@@ -54,7 +55,7 @@ public class ProxyFactoryTest {
     void proxyTargetClass() {
         ServiceInterface target = new ServiceImpl();
         ProxyFactory proxyFactory = new ProxyFactory(target);
-        proxyFactory.setProxyTargetClass(true);
+        proxyFactory.setProxyTargetClass(true); // 이 옵션을 true로 하면 된다.
         proxyFactory.addAdvice(new TimeAdvice());
         ServiceInterface proxy = (ServiceInterface) proxyFactory.getProxy();
         log.info("targetClass={}", target.getClass());
