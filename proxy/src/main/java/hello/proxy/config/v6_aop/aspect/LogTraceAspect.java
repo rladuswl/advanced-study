@@ -19,8 +19,10 @@ public class LogTraceAspect {
         this.logTrace = logTrace;
     }
 
-    @Around("execution(* hello.proxy.app..*(..))")
+    // 포인트컷 + 어드바이스 = 어드바이저
+    @Around("execution(* hello.proxy.app..*(..))") // 포인트컷
     public Object execute(ProceedingJoinPoint joinPoint) throws Throwable {
+        // 어드바이스 로직
         TraceStatus status = null;
         try {
             String message = joinPoint.getSignature().toShortString();
