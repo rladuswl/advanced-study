@@ -15,13 +15,13 @@ public class ReflectionTest {
 
         //공통 로직1 시작
         log.info("start");
-        String result1 = target.callA(); //호출하는 메서드가 다음
+        String result1 = target.callA(); //호출하는 메서드가 다름 callA
         log.info("result={}", result1);
         //공통 로직1 종료
 
         //공통 로직2 시작
         log.info("start");
-        String result2 = target.callB(); //호출하는 메서드가 다음
+        String result2 = target.callB(); //호출하는 메서드가 다름 callB
         log.info("result={}", result2);
         //공통 로직2 종료
     }
