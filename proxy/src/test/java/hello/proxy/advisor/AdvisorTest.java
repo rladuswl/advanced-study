@@ -1,8 +1,8 @@
 package hello.proxy.advisor;
 
 import hello.proxy.common.advice.TimeAdvice;
-import hello.proxy.common.service.ServiceImpl;
-import hello.proxy.common.service.ServiceInterface;
+import hello.proxy.advisor.common.service.ServiceImpl;
+import hello.proxy.advisor.common.service.ServiceInterface;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -13,7 +13,6 @@ import org.springframework.aop.framework.ProxyFactory;
 import org.springframework.aop.support.DefaultPointcutAdvisor;
 import org.springframework.aop.support.NameMatchMethodPointcut;
 
-import java.awt.*;
 import java.lang.reflect.Method;
 
 @Slf4j

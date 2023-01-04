@@ -1,11 +1,10 @@
 package hello.proxy.proxyfactory;
 
 import hello.proxy.common.advice.TimeAdvice;
-import hello.proxy.common.service.ConcreteService;
-import hello.proxy.common.service.ServiceImpl;
-import hello.proxy.common.service.ServiceInterface;
+import hello.proxy.advisor.common.service.ConcreteService;
+import hello.proxy.advisor.common.service.ServiceImpl;
+import hello.proxy.advisor.common.service.ServiceInterface;
 import lombok.extern.slf4j.Slf4j;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.aop.framework.ProxyFactory;

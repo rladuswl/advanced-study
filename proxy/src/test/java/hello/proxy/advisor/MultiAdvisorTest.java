@@ -1,8 +1,7 @@
 package hello.proxy.advisor;
 
-import hello.proxy.common.advice.TimeAdvice;
-import hello.proxy.common.service.ServiceImpl;
-import hello.proxy.common.service.ServiceInterface;
+import hello.proxy.advisor.common.service.ServiceImpl;
+import hello.proxy.advisor.common.service.ServiceInterface;
 import lombok.extern.slf4j.Slf4j;
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
@@ -11,7 +10,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.aop.Pointcut;
 import org.springframework.aop.framework.ProxyFactory;
 import org.springframework.aop.support.DefaultPointcutAdvisor;
-import org.springframework.aop.support.NameMatchMethodPointcut;
 
 public class MultiAdvisorTest {
 
