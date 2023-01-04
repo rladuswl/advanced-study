@@ -6,6 +6,7 @@ import org.springframework.cglib.proxy.MethodProxy;
 
 import java.lang.reflect.Method;
 
+ // 스프링이 포함하고 있는 cglib
 @Slf4j
 public class TimeMethodInterceptor implements MethodInterceptor {
 
@@ -20,7 +21,7 @@ public class TimeMethodInterceptor implements MethodInterceptor {
         log.info("TimeProxy 실행");
         long startTime = System.currentTimeMillis();
 
-        Object result = methodProxy.invoke(target, args);
+        Object result = methodProxy.invoke(target, args); // method.invoke()보다 methodProxy.invoke()가 더 빨라서 권장
 
         long endTime = System.currentTimeMillis();
         long resultTime = endTime - startTime;
