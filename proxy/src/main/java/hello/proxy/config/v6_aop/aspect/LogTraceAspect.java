@@ -10,7 +10,7 @@ import org.aspectj.lang.annotation.Aspect;
 import java.lang.reflect.Method;
 
 @Slf4j
-@Aspect
+@Aspect // 실무에서 대부분 사용하는 방식
 public class LogTraceAspect {
 
     private final LogTrace logTrace;
