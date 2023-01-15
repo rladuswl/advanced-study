@@ -11,7 +11,8 @@ import study.aop.proxyvs.code.ProxyDIAspect;
 
 @Slf4j
 //@SpringBootTest(properties = {"spring.aop.proxy-target-class=false"}) // jdk 동적 프록시, DI 예외발생
-@SpringBootTest(properties = {"spring.aop.proxy-target-class=true"}) // CGLIB 동적 프록시, 성공
+//@SpringBootTest(properties = {"spring.aop.proxy-target-class=true"}) // CGLIB 동적 프록시, 성공
+@SpringBootTest
 @Import(ProxyDIAspect.class)
 public class ProxyDITest {
 
